@@ -1,0 +1,88 @@
+body {
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background: pink;
+}
+
+
+/* From 400px and bigger */
+@media screen and (min-width: 500px)  {
+    body {
+        background: pink;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 649px) {
+    body {
+        background: #fff;
+    }
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span {
+    color: #b7832f;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em 0;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .col-1,.col-2,.col-3 {
+        width: 100%;
+    }
+}
+
+.col-bg {
+    background: #212614;
+    color: #fff;
+    padding: 1em;
+}
